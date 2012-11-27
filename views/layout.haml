@@ -1,0 +1,62 @@
+!!! 5
+%html.no-js
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+
+    %title Antoni Misiewicz - O mnie
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "width=device-width", :name => "viewport"}
+
+    %link{:href => "/css/normalize.css", :rel => "stylesheet"}
+    %link{:href => "/css/main.css", :rel => "stylesheet"}
+
+    %script{:src => "/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"}
+
+  %body.subpage
+
+    .header-container
+      %header.wraper.clr
+        %h1.title
+          %a{:href => "/", :title => "Antoni Misiewicz.pl"}
+            Antoni Misiewicz
+            %span> .
+            pl
+        %nav
+          %ul
+            %li
+              %a{:href => "/o-mnie", :class => @active == :about ? 'active' : nil} O mnie
+            / %li
+            /   %a{:href => "moje-zycie"} Moje życie
+            %li
+              %a{:href => "/apel", :class => @active == :apel ? 'active' : nil} Apel
+            / %li
+            /  %a{:href => "/kontakt"} Kontakt
+
+            / %li#language.lang
+            /   %a.pl{:href => "", :title => "polski"} polski
+            /   .drop
+            /     %ul
+            /       %li
+            /         %a.en{:href => ""} english
+            /       %li
+            /         %a.ua{:href => ""} Український
+            /       %li
+            /         %a.ru{:href => ""} русский
+
+    .content.clr= yield
+
+    .footer-container
+      %footer.wraper
+        %a{:href => "/"}
+          %strong antonimisiewicz.pl
+          © 2012
+
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
+    %script{:src => "/js/main.js"}
+
+    :javascript
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
