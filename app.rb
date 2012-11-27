@@ -11,14 +11,14 @@ require 'sinatra/contrib'
 # mongodb
 require 'mongo_mapper'
 
-configure do
-  MongoMapper.setup(
-    {
-      'production' => { 'uri' => ENV['MONGOHQ_URL'] },
-      'development' => { 'host' => 'localhost', 'database' => 'antos' }
-    },
-    ENV['RACK_ENV'] || 'development')
-end
+# configure do
+#   MongoMapper.setup(
+#     {
+#       'production' => { 'uri' => ENV['MONGOHQ_URL'] },
+#       'development' => { 'host' => 'localhost', 'database' => 'antos' }
+#     },
+#     ENV['RACK_ENV'] || 'development')
+# end
 
 helpers do
 
