@@ -6,10 +6,12 @@ require 'rubygems'
 require 'sinatra'
 require 'sinatra/contrib'
 
+require 'sinatra/reloader' if development?
+
 # i18n
 
 # mongodb
-require 'mongo_mapper'
+# require 'mongo_mapper'
 
 # configure do
 #   MongoMapper.setup(
