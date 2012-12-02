@@ -71,7 +71,7 @@ textarea {
    Author: Radoslaw Kowalewski / kowalewski.r@gmail.com
    ========================================================================== */
 
-body { font: 15px/1.5 SignikaLight, Helvetica, Helvetica Neue, Arial; background: #6d688e url(/img/bg.jpg) center 0 no-repeat fixed; color: #666; }
+body { font: 17px/1.5 SignikaLight, Helvetica, Helvetica Neue, Arial; background: #6d688e url(/img/bg.jpg) center 0 no-repeat fixed; color: #666; }
 
 .wraper { width: 70%; margin: 0 auto; }
 
@@ -218,13 +218,14 @@ strong { font-weight: normal; font-family: SignikaRegular; }
     -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
-.krs li { padding: 0; border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 10px; font-size: 20px; }
+.krs li { padding: 0; border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 10px; font-size: 18px; }
 .krs li:last-child { border: none; padding: 0; margin: 0; }
 .krs .label { margin-right: 10px; color: #242850; }
 .krs .val { color: #d92613; }
 
 .content .main-article { float: left; width: 65%; padding-right: 50px; }
-.lead { font-size: 1.7em; color: #242850; font-family: SignikaRegular; margin: 30px 0; text-align: center; line-height: 1.4; }
+.lead { font-size: 1.6em; color: #242850; font-family: SignikaRegular; margin: 30px 0; text-align: center; line-height: 1.4; }
+.lead strong { font-family: SignikaSemibold; font-style: normal; color: #AE2218; }
 
 .btn { position: relative; display: inline-block; font-family: SignikaRegular; color: #fff; text-shadow: 1px 1px 0 #911108; height: 40px; line-height: 40px; padding: 0 20px; border-radius: 50px; background: url(/img/action-button.png) 0 0 repeat-x; border: 1px solid #911108;
     -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.4);
@@ -254,7 +255,7 @@ strong { font-weight: normal; font-family: SignikaRegular; }
 .doctor { border-bottom: 1px solid #eebfa8; padding: 0 0 30px 0; margin-bottom: 30px; overflow: hidden; }
 .doctor:last-of-type { border: none; padding-bottom: 0; }
 .doctor li { display: block; float: left; width: 33%; padding: 20px 0 20px 40px; border: none; background: url(/img/doctor-ico.png) 0 20px no-repeat; }
-.doctor h4 { font-size: 1.5em; margin-bottom: 0.5em; color: #fff; }
+.doctor h4 { font-size: 1.5em; margin-bottom: 0.5em; color: #fff; font-family: SignikaSemibold; }
 .doctor p { margin: 0; }
 
 .col2 { width: 50%; float: left; }
@@ -263,6 +264,8 @@ strong { font-weight: normal; font-family: SignikaRegular; }
 
 .wniosek { padding: 10px; background: #fff; width: 100%; display: block; margin: 0 auto; max-width: 800px; border: 1px solid #ccc; margin-bottom: 10px; }
 .fundacja { border-top: 1px solid #ccc; padding: 30px 0; }
+.fundacja p { text-align: center; font-size: 20px; }
+.fundacja p.lead { font-size: 1.6em; }
 .fundacja img { float: left; margin-right: 30px; }
 .fundacja strong { color: #242850; }
 .fundacja span { color: #D92613; }
