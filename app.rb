@@ -7,18 +7,21 @@ require 'sinatra'
 require 'sinatra/contrib'
 
 # i18n
+require 'i18n'
 
 # mongodb
 require 'mongo_mapper'
 
-# configure do
-#   MongoMapper.setup(
-#     {
-#       'production' => { 'uri' => ENV['MONGOHQ_URL'] },
-#       'development' => { 'host' => 'localhost', 'database' => 'antos' }
-#     },
-#     ENV['RACK_ENV'] || 'development')
-# end
+configure do
+  I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'i18n', '*.yml').to_s]
+
+  # MongoMapper.setup(
+  #   {
+  #     'production' => { 'uri' => ENV['MONGOHQ_URL'] },
+  #     'development' => { 'host' => 'localhost', 'database' => 'antos' }
+  #   },
+  #   ENV['RACK_ENV'] || 'development')
+end
 
 helpers do
 
