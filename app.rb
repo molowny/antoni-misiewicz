@@ -10,7 +10,7 @@ require 'sinatra/contrib'
 require 'i18n'
 
 # mongodb
-require 'mongo_mapper'
+# require 'mongo_mapper'
 
 configure do
   I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'i18n', '*.yml').to_s]
@@ -21,6 +21,11 @@ configure do
   #     'development' => { 'host' => 'localhost', 'database' => 'antos' }
   #   },
   #   ENV['RACK_ENV'] || 'development')
+end
+
+configure :development do |config|
+  require 'sinatra/reloader'
+  config.also_reload 'i18n/*.yml'
 end
 
 helpers do
@@ -37,19 +42,45 @@ helpers do
     @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == ['admin', 'admin']
   end
 
+  def t(phrase)
+    I18n.t(phrase)
+  end
+
 end
 
+# pl
 get '/' do
+  I18n.locale = :pl
+
   @active = :about
   haml @active
 end
 
 get '/o-mnie' do
+  I18n.locale = :pl
+
   @active = :about
   haml @active
 end
 
 get '/apel' do
+  I18n.locale = :pl
+
+  @active = :apel
+  haml @active
+end
+
+# en
+get '/about' do
+  I18n.locale = :en
+
+  @active = :about
+  haml @active
+end
+
+get '/apel-en' do
+  I18n.locale = :en
+
   @active = :apel
   haml @active
 end

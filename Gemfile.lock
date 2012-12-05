@@ -1,34 +1,17 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    activemodel (3.2.9)
-      activesupport (= 3.2.9)
-      builder (~> 3.0.0)
-    activesupport (3.2.9)
-      i18n (~> 0.6)
-      multi_json (~> 1.0)
     backports (2.6.5)
-    bson (1.8.0)
-      activesupport
-    bson_ext (1.8.0)
-      bson (~> 1.8.0)
-    builder (3.0.4)
     eventmachine (1.0.0)
+    eventmachine (1.0.0-x86-mingw32)
     haml (3.1.7)
     i18n (0.6.1)
-    mongo (1.8.0)
-      bson (~> 1.8.0)
-    mongo_mapper (0.12.0)
-      activemodel (~> 3.0)
-      activesupport (~> 3.0)
-      plucky (~> 0.5.2)
-    multi_json (1.3.7)
-    plucky (0.5.2)
-      mongo (~> 1.5)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
     rack-test (0.6.2)
+      rack (>= 1.0)
+    shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.3.3)
       rack (~> 1.3, >= 1.3.6)
@@ -45,11 +28,11 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
-  bson_ext
   haml
   i18n
-  mongo_mapper
+  shotgun
   sinatra
   sinatra-contrib

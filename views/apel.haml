@@ -1,56 +1,42 @@
 .box.blue
   .clr.wraper
-    %p.lead
-      Szanowni Państwo,
-      %br
-      Nasz synek Antoni ma zespół Downa. Pragniemy zapewnić mu jak najlepsze warunki rozwoju. Niestety wiąże się to z ogromnymi kosztami, których nie jesteśmy w stanie pokryć samodzielnie. Dlatego też zwracamy się do Państwa z gorącą prośbą o przekazanie 1% podatku należnego na pomoc naszemu synkowi – Antosiowi.
+    %p.lead= t 'apel.lead_1'
 / .box blue
 .wraper.clr
-  %p.lead
-    Przekaż swój 1% podatku Antkowi!
-    %br
-    Wystarczy, że w zeznaniu podatkowym wpiszesz dane:
+  %p.lead= t 'apel.lead_2'
 
   .sample.clr
     .col2
       %ul.krs
         %li
-          %span.label
-            KRS
-            %small (pole 124):
+          %span.label= t 'apel.krs_info'
           %span.val 0000037904
         %li
-          %span.label
-            Cel szczegółowy 1%
-            %small (pole 126):
+          %span.label= t 'apel.krs_info_2'
           %span.val 17994 Misiewicz Antoni
     / .col2
     .col2
       %figure
-        %img.wniosek{:alt => "podgląd wniosku", :src => "/img/wniosek.jpg"}
+        %a{:href => "pdf/apel.pdf", :title => "Apel - plik pdf"}
+          %img.wniosek{:alt => "podgląd wniosku", :src => "/img/wniosek.jpg"}
         %figcaption Przykład prawidłowo wypełnionego wniosku
     / .col2
   / .clr
   .fundacja.clr
-    .col2
-      %p.lead Wszelkie darowizny prosimy wpłacać na konto:
-    .col2
-      %p
-        %strong Fundacja Dzieciom  „Zdążyć z Pomocą”
-      %p
-        ul. Łomiańska 5 01-685 Warszawa
-        %br
-        15 1060 0076 0000 3310 0018 2615
-        %br
-        z dopiskiem:
-        %span 17994 MISIEWICZ ANTONI - darowizna na pomoc i ochronę zdrowia.
+    %p.lead= t 'apel.paragraph_1'
+    %p
+      %strong Fundacja Dzieciom  „Zdążyć z Pomocą”
+      %br
+      ul. Łomiańska 5 01-685 Warszawa
+      %br
+      15 1060 0076 0000 3310 0018 2615
+      %br
+      z dopiskiem:
+      %span 17994 MISIEWICZ ANTONI - darowizna na pomoc i ochronę zdrowia.
     / .clr
   / .fundacja
 / .wraper
 .box.blue
   .clr.wraper
-    %p.lead
-      Będziemy wdzięczni za każdy rodzaj wsparcia – duchowego czy materialnego.
-      %br
-      Dziękujemy!
+    %p.lead= t 'apel.paragraph_2'
   / .wraper

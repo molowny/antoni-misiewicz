@@ -1,0 +1,65 @@
+pl:
+  title: Antoni Misiewicz
+
+  # navigation
+  nav:
+    about: O mnie
+    apel: Apel
+    contact: Kontakt
+
+    links:
+      about: /o-mnie
+      apel: /apel
+      contact: /kontakt
+
+  # buttons
+  about:
+    lead: "Cześć! Jestem Antoni Misiewicz. Przyszedłem na świat 4 lipca 2011 roku w Suwałkach. Wcześniejsze miesiące spędziłem w brzuszku mamy wraz z moją siostrą bliźniaczką Oleną. Po urodzeniu musieliśmy się rozstać – ja zostałem dłużej w szpitalu, ponieważ miałem problemy z oddychaniem. Ponadto lekarze postawili dodatkową diagnozę - <strong>zespół Downa.</strong>"
+    paragraph_1: "Na potwierdzenie tej diagnozy rodzice musieli trochę poczekać. Gdy z Oleną skończyliśmy miesiąc, mama i tata zabrali nas do Warszawy, gdzie mieszkamy. W tym czasie badania genetyczne potwierdziły diagnozę lekarzy. Rozpoczęły się wizyty u najróżniejszych specjalistów:"
+    paragraph_2: "Poza systematyczną obserwacją lekarzy jestem także pod stałą opieką innych specjalistów: pań rehabilitantek oraz pani oligofrenopedagog. Na rehabilitację ruchową uczęszczam 3 razy w tygodniu, w pozostałym czasie podobnymi ćwiczeniami męczy mnie mama. Z panią oligofrenopedagog spotykam się raz na 2-3 tygodnie, a później ćwiczą ze mną rodzice."
+    paragraph_3: "Postępy, jakie daje rehabilitacja widać gołym okiem. Stronę będę uzupełniał systematycznie, więc mam nadzieję, że Wy też je zauważycie :)"
+
+    button: Przekaż 1% podatku
+
+    labels:
+      first_name: Imię
+      last_name: Nazwisko
+      year_of_birth: Rok urodzenia
+      height: Wzrost
+      weight: Waga
+      siblings: Rodzeństwo
+
+    first_name: Antoni
+    last_name: Misiewicz
+    siblings: siostra Olena
+
+    state: stan na
+
+    doctors:
+      # z google translate :)
+      cardiologist: Kardiolog
+      orthopaedist: Ortopeda
+      ophthalmologist: Okulista
+      endocrinologist: Endokrynolog
+      laryngologist: Laryngolog
+      pediatrician: Pediatra
+
+    stories:
+      cardiologist: "W szpitalu zdiagnozowano xxx. Na szczęście kolejne badania potwierdziły, że ubytek zarasta i nie sprawia większych problemów."
+      orthopaedist: "Ze względu na moje ułożenie w brzuchu mamy istniało ryzyko, że mogę mieć problemy z bioderkami. Szczęśliwie wszystko jest w porządku. Jednakże mając na uwadze moją wiotkość mięśni, muszę być systematycznie kontrolowany."
+      ophthalmologist: "Okazało się, że jestem krótkowidzem. Potrzebuję stałej kontroli okulistycznej, a w przyszłości będę nosił okulary."
+      endocrinologist: "Jestem także pod stałą obserwacją endokrynologa, ponieważ mogę mieć problemy z hormonami tarczycy. Podobno wielu zespołowców tak ma."
+      laryngologist: "Mam lekki niedosłuch. Jest on spowodowany wiotkością mięśni i słabym odprowadzaniem płynów z uszu. Najprawdopodobniej będę miał przeprowadzony zabieg drenażu, dlatego muszę systematycznie odwiedzać panią laryngolog."
+      pediatrician: "Okazuje się, że dzieci z zD mają słabszą odporność, więc częściej odwiedzam panią doktor i regularnie przeprowadzam badania krwi."
+
+  apel:
+    lead_1: "Szanowni Państwo,<br>Nasz synek Antoni ma zespół Downa. Pragniemy zapewnić mu jak najlepsze warunki rozwoju. Niestety wiąże się to z ogromnymi kosztami, których nie jesteśmy w stanie pokryć samodzielnie. Dlatego też zwracamy się do Państwa z gorącą prośbą o przekazanie 1% podatku należnego na pomoc naszemu synkowi – Antosiowi."
+    lead_2: "Przekaż swój 1% podatku Antkowi!<br>Wystarczy, że w zeznaniu podatkowym wpiszesz dane:"
+
+    krs_info: "KRS <small>(pole 124)</small>:"
+    krs_info_2: " Cel szczegółowy 1% <small>(pole 126):</small>"
+
+    paragraph_1: "Wszelkie darowizny prosimy wpłacać na konto:"
+    paragraph_2: "Będziemy wdzięczni za każdy rodzaj wsparcia – duchowego czy materialnego. Dziękujemy!"
+
+

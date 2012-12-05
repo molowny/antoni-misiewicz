@@ -1,72 +1,70 @@
 .action-button
-  %a{:href => "/apel"} Przekaż 1% podatku
+  %a{:href => "/pdf/apel.pdf"}= t 'about.button'
 
 .clr.wraper
-  %p.lead
-    Cześć! Jestem Antoni Misiewicz. Przyszedłem na świat 4 lipca 2011 roku w Suwałkach. Wcześniejsze miesiące spędziłem w brzuszku mamy wraz z moją siostrą bliźniaczką Oleną. Po urodzeniu musieliśmy się rozstać – ja zostałem dłużej w szpitalu, ponieważ miałem problemy z oddychaniem. Przez pierwsze dwa tygodnie mojego życia leczono mnie antybiotykami, chociaż nadal nie wiadomo było, co tak naprawdę mi dolega.
+  %p.lead= t 'about.lead'
 
   .about.clr
     .about-pic
       %img{:alt => "ja z mamą Krystyną", :src => "/img/about-pic.png"}
     %ul.clr
       %li
-        %span.label Imię:
-        %span.value Antoni
+        %span.label= "#{t('about.labels.first_name')}:"
+        %span.value=  t 'about.first_name'
       %li
-        %span.label Nazwisko:
-        %span.value Misiewicz
+        %span.label= "#{t('about.labels.last_name')}:"
+        %span.value= "#{t('about.first_name')}:"
       %li
-        %span.label Rok urodzenia:
+        %span.label= "#{t('about.labels.year_of_birth')}:"
         %span.value 2011
       %li
         %span.label
-          Wzrost
+          = t 'about.labels.height'
           %small> *
           \:
         %span.value 83cm
       %li
         %span.label
-          Waga
+          = t 'about.labels.weight'
           %small> *
           \:
         %span.value 12kg
       %li
-        %span.label Rodzeństwo:
-        %span.value siostra Olena
+        %span.label= "#{t('about.labels.siblings')}:"
+        %span.value
+          = t 'about.siblings'
     %span.notice
       %small *
-      stan na 21.11.2012
+      = t 'about.state'
+      %strong XII 2012
   / .about
 / .article
 .box.orange
   .wraper.clr
-    %p
-      W końcu wstępnie stwierdzono, że mam wadę genetyczną – zespół Downa. Jednak na potwierdzenie tej diagnozy rodzice musieli trochę poczekać. Gdy z Oleną skończyliśmy miesiąc, mama i tata zabrali nas do Warszawy, gdzie mieszkamy. W tym czasie badania genetyczne potwierdziły diagnozę lekarzy. Rozpoczęły się wizyty u najróżniejszych specjalistów:
+    %p= t 'about.paragraph_1'
     %ul.doctor
       %li
-        %h4 Kardiolog
-        %p W szpitalu zdiagnozowano xxx.  Na szczęście kolejne badania potwierdziły, że ubytek zarasta i nie sprawia większych problemów.
+        %h4= t 'about.doctors.cardiologist'
+        %p= t 'about.stories.cardiologist'
       %li
-        %h4 Ortopeda
-        %p Ze względu na moje ułożenie w brzuchu mamy istniało ryzyko, że mogę mieć problemy z bioderkami. Szczęśliwie wszystko jest w porządku. Jednakże mając na uwadze moją wiotkość mięśni, muszę być systematycznie kontrolowany.
+        %h4= t 'about.doctors.orthopaedist'
+        %p= t 'about.stories.orthopaedist'
       %li
-        %h4 Okulista
-        %p Okazało się, że jestem krótkowidzem. Potrzebuję stałej kontroli okulistycznej, a w przyszłości będę nosił okulary.
+        %h4= t 'about.doctors.ophthalmologist'
+        %p= t 'about.stories.ophthalmologist'
     %ul.doctor
       %li
-        %h4 Endokrynolog
-        %p Jestem także pod stałą obserwacją endokrynologa, ponieważ mogę mieć problemy z hormonami tarczycy. Podobno wielu zespołowców tak ma.
+        %h4= t 'about.doctors.endocrinologist'
+        %p= t 'about.stories.endocrinologist'
       %li
-        %h4 Laryngolog
-        %p Mam lekki niedosłuch. Jest on spowodowany wiotkością mięśni i słabym odprowadzaniem płynów z uszu. Najprawdopodobniej będę miał przeprowadzony zabieg drenażu, dlatego muszę systematycznie odwiedzać panią laryngolog.
+        %h4= t 'about.doctors.laryngologist'
+        %p= t 'about.stories.laryngologist'
       %li
-        %h4 Pediatra
-        %p Okazuje się, że dzieci z zD mają słabszą odporność, więc częściej odwiedzam panią doktor i regularnie przeprowadzam badania krwi.
-    %p
-      Poza systematyczną obserwacją lekarzy jestem także pod stałą opieką innych specjalistów: pań rehabilitantek oraz pani oligofrenopedagog. Na rehabilitację ruchową uczęszczam 3 razy w tygodniu, w pozostałym czasie podobnymi ćwiczeniami męczy mnie mama. Z panią oligofrenopedagog spotykam się raz na 2-3 tygodnie, a później ćwiczą ze mną rodzice.
+        %h4= t 'about.doctors.pediatrician'
+        %p= t 'about.stories.pediatrician'
+    %p= t 'about.paragraph_2'
   / .wraper
 / .box.orange
 .clr.wraper
-  %p.lead
-    Postępy, jakie daje rehabilitacja widać gołym okiem. Stronę będę uzupełniał systematycznie, więc mam nadzieję, że Wy też je zauważycie :)
+  %p.lead= t 'about.paragraph_3'
 / .wraper

@@ -4,8 +4,7 @@
     %meta{:charset => "utf-8"}
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
 
-    %title
-      Antoni Misiewicz
+    %title= t 'title'
 
     %meta{:content => "", :name => "description"}
     %meta{:content => "width=device-width", :name => "viewport"}
@@ -14,9 +13,6 @@
     %link{:href => "/css/main.css", :rel => "stylesheet"}
 
     %script{:src => "/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"}
-
-    :plain
-      <meta name="google-site-verification" content="9--SosfKgKRDTpsU2hv1GlH33odaYrGXpGvVEjfDoT4" />
 
   %body.subpage
 
@@ -30,11 +26,11 @@
         %nav
           %ul
             %li
-              %a{:href => "/o-mnie", :class => @active == :about ? 'active' : nil} O mnie
+              %a{:href => t('nav.links.about'), :class => @active == :about ? 'active' : nil}= t 'nav.about'
             / %li
             /   %a{:href => "moje-zycie"} Moje życie
             %li
-              %a{:href => "/apel", :class => @active == :apel ? 'active' : nil} Apel
+              %a{:href => t('nav.links.apel'), :class => @active == :apel ? 'active' : nil}= t 'nav.apel'
             / %li
             /  %a{:href => "/kontakt"} Kontakt
 
@@ -43,7 +39,7 @@
             /   .drop
             /     %ul
             /       %li
-            /         %a.en{:href => ""} english
+            /         %a.en{:href => "/about"} english
             /       %li
             /         %a.ua{:href => ""} Український
             /       %li
