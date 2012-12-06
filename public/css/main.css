@@ -116,10 +116,11 @@ body { font: 17px/1.5 SignikaLight, Helvetica, Helvetica Neue, Arial; background
 }
 .header-container nav>ul>li>a:hover, .header-container nav>ul>li>a.active { color: #dd402d; }
 
-.header-container nav>ul>li.lang { position: relative; }
+.header-container nav>ul>li.lang { position: relative; padding-right: 15px; background: url(/img/lang-arrow.png) right 0 no-repeat; cursor: pointer; margin-left: 20px; }
+.header-container nav>ul>li.lang:hover { background-position: right bottom; }
 .header-container nav>ul>li.lang>a { width: 16px; height: 11px; background: url(/img/flags.png) 0 0 no-repeat; text-indent: -9999px; display: block; float: left;}
 
-.header-container nav>ul>li.lang .drop { display: none; width: 150px; position: absolute; top: 30px; left: 50%; margin-left: -75px; background: #fff; padding: 20px; border: 1px solid #ccc;
+.header-container nav>ul>li.lang .drop { display: none; width: 150px; position: absolute; top: 30px; left: 50%; margin-left: -82px; background: #fff; padding: 20px; border: 1px solid #ccc;
     -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     box-shadow: 1px 1px 2px rgba(0,0,0,0.2)
 }
@@ -128,10 +129,10 @@ body { font: 17px/1.5 SignikaLight, Helvetica, Helvetica Neue, Arial; background
 .header-container nav>ul>li.lang .drop li:last-child { margin: 0; padding: 0; border: none; }
 .header-container nav>ul>li.lang .drop li a { font-size: 13px; display: block; padding-left: 25px; background: url(/img/flags.png) 0 0 no-repeat; height: 11px; line-height: 11px; }
 
-.header-container nav>ul>li.lang a.pl { background-position: 0 0; }
-.header-container nav>ul>li.lang a.en { background-position: 0 -11px; }
-.header-container nav>ul>li.lang a.ua { background-position: 0 -22px; }
-.header-container nav>ul>li.lang a.ru { background-position: 0 -33px; }
+.header-container nav>ul>li.lang a.pl { background-position: 0 0 !important; }
+.header-container nav>ul>li.lang a.en { background-position: 0 -11px !important; }
+.header-container nav>ul>li.lang a.ua { background-position: 0 -22px !important; }
+.header-container nav>ul>li.lang a.ru { background-position: 0 -33px !important; }
 
 .apel { height: 276px; margin-top: 80px; }
 .apel .wraper { position: relative; height: 276px; }

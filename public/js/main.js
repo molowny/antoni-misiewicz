@@ -11,14 +11,6 @@ $(function() {
 
 	}).resize();
 
-	$(window).resize(function() {
-
-		$('.article-header').css({
-			'width' : $('article').width() + 60
-		});
-
-	}).resize();
-
 
     $('body').click(function() {
         if ($('#language .drop').hasClass('active')) {
@@ -26,7 +18,7 @@ $(function() {
         }
     });
 
-    $('#language>a').click(function(e) {
+    $('#language').click(function(e) {
         e.preventDefault();
         e.stopPropagation();
         $('#language .drop').stop(true, true).addClass('active').fadeToggle('fast');
