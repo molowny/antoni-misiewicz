@@ -71,14 +71,14 @@ get '/apel' do
 end
 
 # en
-get '/about' do
+get '/about-me' do
   I18n.locale = :en
 
   @active = :about
   haml @active
 end
 
-get '/apel-en' do
+get '/appeal' do
   I18n.locale = :en
 
   @active = :apel

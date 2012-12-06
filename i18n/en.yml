@@ -1,0 +1,67 @@
+en:
+  title: Antoni Misiewicz
+
+  # navigation
+  nav:
+    about: About me
+    apel: Appeal
+    contact: Contact
+
+    links:
+      about: /about-me
+      apel: /appeal
+      contact: /contact
+
+  # buttons
+  about:
+    lead: "Hi! I'm Anthony Misiewicz. I was born on 4 July 2011 in Suwalki. Previous months I spent in my mummy’s tummy with my twin sister Olena. After birth, we had to say goodbye - I had to stay in the hospital because I had trouble with breathing. Doctors put additional diagnosis - <strong>Down syndrome.</strong>"
+    paragraph_1: "To confirm the diagnosis, parents had to wait a bit. When I and Olena finished month, Mom and Dad took us to Warsaw, where we live. At that time genetic research confirmed the diagnosis of doctors. After that I began visiting various specialists:"
+    paragraph_2: "In addition to the systematic doctors’ observation I am also under the care of other specialists: physiotherapists and pedagogue of mentally disabled. I am attending  physical rehabilitation three times a week, and my mom works with me at home. I meet pedagogue of mentally disabled every 2-3 weeks, and then practice with my parents."
+    paragraph_3: "Progress that gives rehabilitation is visible with the naked eye. I will update the page regularly, so I hope you will notice them too :)"
+
+    button: Share 1% of tax
+
+    labels:
+      first_name: Name
+      last_name: Surname
+      year_of_birth: Year of birth
+      height: Growth
+      weight: Weight
+      siblings: Sibling
+
+    first_name: Antoni
+    last_name: Misiewicz
+    siblings: sister Olena
+
+    state: As of
+
+    doctors:
+      # z google translate :)
+      cardiologist: Cardiologist
+      orthopaedist: Orthopaedic
+      ophthalmologist: Ophthalmologist
+      endocrinologist: Endocrinologist
+      laryngologist: Laryngologist
+      pediatrician: Pediatrician
+
+    stories:
+      cardiologist: "In the hospital, I was diagnosed with a minor heart defect . Fortunately, subsequent studies confirmed that the loss had overgrown and not cause major problems."
+      orthopaedist: "Because of my position? in the abdomen there was risk that I would have problems with hips. Fortunately, everything is fine. However, given my floppy muscles, I need to be regularly inspected."
+      ophthalmologist: "It turned out that I was nearsighted. I need constant monitoring, and in the future I will be wearing glasses."
+      endocrinologist: "I am also under constant observation of endocrinologist because I have problems with thyroid hormones. Apparently, it is common problem of children with Down syndrome."
+      laryngologist: "I have a slight hearing loss. It is caused by muscle flaccidity and weak fluid discharge from my ears. Most likely, I will need to undergo drainage surgery, so I have to regularly visit laryngologist."
+      pediatrician: "It turns out that children with Down syndrome have a weaker immune system, so I have to visit my doctor more often and have regular blood tests."
+
+  apel:
+    lead_1: "Ladies and Gentlemen,<brour son Anthony has Down's syndrome. We want to provide him the best conditions for development. Unfortunately, this involves huge costs, which we are not able to cover ourselves Therefore, we turn to you with a request to transfer 1% of the due tax on helping our son - Anthony."
+    lead_2: "Transfer your 1% tax to Anthony! All you have to do is to enter the below data into your tax return form:"
+
+    krs_info: "KRS <small>(field 124)</small>:"
+    krs_info_2: "Specific objective 1% <small>(field 126):</small>"
+
+    paragraph_1: "To make a donation please deposit the amount into our bank account:"
+    paragraph_2: "We will appreciate any kind of support - spiritual or material. Thank you!"
+
+  i18n:
+    pl: polski
+    en: angielski

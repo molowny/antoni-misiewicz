@@ -34,16 +34,14 @@
             / %li
             /  %a{:href => "/kontakt"} Kontakt
 
-            / %li#language.lang
-            /   %a.pl{:href => "", :title => "polski"} polski
-            /   .drop
-            /     %ul
-            /       %li
-            /         %a.en{:href => "/about"} english
-            /       %li
-            /         %a.ua{:href => ""} Український
-            /       %li
-            /         %a.ru{:href => ""} русский
+            %li#language.lang
+              - start_pages = {pl: '/', en: '/about-me'}
+              %a{:href => start_pages[I18n.locale], :title => "polski", :class => I18n.locale}= t "i18n.#{I18n.locale}"
+              .drop
+                %ul
+                  - [:pl, :en].tap{ |l| l.delete(I18n.locale) }.each do |lang|
+                    %li
+                      %a{:href => start_pages[lang], :class => lang}= t "i18n.#{lang}"
 
     .content.clr= yield
 

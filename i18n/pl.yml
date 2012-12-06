@@ -45,7 +45,7 @@ pl:
       pediatrician: Pediatra
 
     stories:
-      cardiologist: "W szpitalu zdiagnozowano xxx. Na szczęście kolejne badania potwierdziły, że ubytek zarasta i nie sprawia większych problemów."
+      cardiologist: "W szpitalu zdiagnozowano niewielką wadę serca. Na szczęście kolejne badania potwierdziły, że ubytek zarasta i nie sprawia większych problemów."
       orthopaedist: "Ze względu na moje ułożenie w brzuchu mamy istniało ryzyko, że mogę mieć problemy z bioderkami. Szczęśliwie wszystko jest w porządku. Jednakże mając na uwadze moją wiotkość mięśni, muszę być systematycznie kontrolowany."
       ophthalmologist: "Okazało się, że jestem krótkowidzem. Potrzebuję stałej kontroli okulistycznej, a w przyszłości będę nosił okulary."
       endocrinologist: "Jestem także pod stałą obserwacją endokrynologa, ponieważ mogę mieć problemy z hormonami tarczycy. Podobno wielu zespołowców tak ma."
@@ -57,9 +57,13 @@ pl:
     lead_2: "Przekaż swój 1% podatku Antkowi!<br>Wystarczy, że w zeznaniu podatkowym wpiszesz dane:"
 
     krs_info: "KRS <small>(pole 124)</small>:"
-    krs_info_2: " Cel szczegółowy 1% <small>(pole 126):</small>"
+    krs_info_2: "Cel szczegółowy 1% <small>(pole 126):</small>"
 
     paragraph_1: "Wszelkie darowizny prosimy wpłacać na konto:"
     paragraph_2: "Będziemy wdzięczni za każdy rodzaj wsparcia – duchowego czy materialnego. Dziękujemy!"
+
+  i18n:
+    pl: polski
+    en: angielski
 
 

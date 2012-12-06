@@ -128,10 +128,10 @@ body { font: 17px/1.5 SignikaLight, Helvetica, Helvetica Neue, Arial; background
 .header-container nav>ul>li.lang .drop li:last-child { margin: 0; padding: 0; border: none; }
 .header-container nav>ul>li.lang .drop li a { font-size: 13px; display: block; padding-left: 25px; background: url(/img/flags.png) 0 0 no-repeat; height: 11px; line-height: 11px; }
 
-.header-container nav>ul>li.lang .drop li a.pl { background-position: 0 0; }
-.header-container nav>ul>li.lang .drop li a.en { background-position: 0 -11px; }
-.header-container nav>ul>li.lang .drop li a.ua { background-position: 0 -22px; }
-.header-container nav>ul>li.lang .drop li a.ru { background-position: 0 -33px; }
+.header-container nav>ul>li.lang a.pl { background-position: 0 0; }
+.header-container nav>ul>li.lang a.en { background-position: 0 -11px; }
+.header-container nav>ul>li.lang a.ua { background-position: 0 -22px; }
+.header-container nav>ul>li.lang a.ru { background-position: 0 -33px; }
 
 .apel { height: 276px; margin-top: 80px; }
 .apel .wraper { position: relative; height: 276px; }
