@@ -70,6 +70,13 @@ get '/apel' do
   haml @active
 end
 
+get '/kontakt' do
+  I18n.locale = :pl
+
+  @active = :contact
+  haml @active
+end
+
 # en
 get '/about-me' do
   I18n.locale = :en
@@ -82,5 +89,12 @@ get '/appeal' do
   I18n.locale = :en
 
   @active = :apel
+  haml @active
+end
+
+get '/contact' do
+  I18n.locale = :en
+
+  @active = :contact
   haml @active
 end

@@ -65,3 +65,12 @@ en:
   i18n:
     pl: polski
     en: angielski
+
+  contact: 
+    contact_header: "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis."
+    cloud_header: "Say hello"
+    cloud_paragraph: "Cześć! Jestem Antoni Misiewicz. Przyszedłem na świat 4 lipca 2011 roku w Suwałkach. Wcześniejsze miesiące spędziłem w brzuszku mamy wraz z moją siostrą bliźniaczką Oleną. Po urodzeniu musieliśmy się rozstać – ja zostałem dłużej w szpitalu, ponieważ miałem problemy z oddychaniem. Ponadto lekarze postawili dodatkową diagnozę - zespół Downa."
+    form_name: "Name"
+    form_mail: "E-mail"
+    form_msg: "Message"
+    form_send: "Send"

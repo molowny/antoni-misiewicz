@@ -66,6 +66,8 @@ textarea {
     padding: 0.2em 0;
 }
 
+h2, h3 { color: #242850; }
+
 
 /* ===== antonimisiewicz.pl ==================================================
    Author: Radoslaw Kowalewski / kowalewski.r@gmail.com
@@ -270,6 +272,46 @@ strong { font-weight: normal; font-family: SignikaRegular; }
 .fundacja img { float: left; margin-right: 30px; }
 .fundacja strong { color: #242850; }
 .fundacja span { color: #D92613; }
+
+.contact { margin-bottom: 20px; }
+
+.contact-box { margin: 30px 0; position: relative;}
+.contact-pic { width: 30%; margin-right: 5%; }
+.contact-pic img { display: block; width: 100%; }
+
+.contact-txt { width: 65%; padding: 30px; border-radius: 8px; background: #fff; border: 1px solid #ccc; position: relative; }
+.contact-txt:after { display: block; width: 16px; height: 19px; background: url(/img/contact-arrow.png) 0 0 no-repeat; content: ''; position: absolute; left: -16px; top: 50px; }
+.contact-txt p:last-child { margin: 0; }
+
+form { margin: 30px 0; }
+form ul { list-style: none; }
+form li { margin-bottom: 10px; }
+textarea, input { 
+    -webkit-transition: all 0.3s ease-in 0s;
+    -moz-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+    -ms-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+ }
+input[type=text] { width: 100%; margin: 0 auto; height: 40px; background: #fff; border: 1px solid #ccc; border-radius: 8px; text-indent: 10px; font-family: SignikaRegular; display: block; }
+textarea { width: 100%; margin: 0 auto; height: 200px; min-height: 50px; background: #fff; border: 1px solid #ccc; border-radius: 8px; font-family: SignikaRegular; display: block; padding: 10px; }
+
+input[type=text]:hover, textarea:hover { border-color: #999; }
+input[type=text]:focus, textarea:focus { border-color: #DD402D; }
+
+input[type=submit], input[type=button] { float: right; position: relative; display: inline-block; font-size: 18px; font-family: SignikaRegular; color: #fff; text-shadow: 1px 1px 0 #911108; height: 44px; line-height: 44px; padding: 0 20px; border-radius: 50px; background: url(/img/action-button.png) 0 0 repeat-x; border: 1px solid #911108;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    -webkit-transition: all 0.3s ease-in 0s;
+    -moz-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+    -ms-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+}
+
+input[type=submit]:hover, input[type=button]:hover { padding: 0 30px; }
+
+
 
 /* ==========================================================================
    Media Queries

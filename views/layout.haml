@@ -31,8 +31,8 @@
             /   %a{:href => "moje-zycie"} Moje życie
             %li
               %a{:href => t('nav.links.apel'), :class => @active == :apel ? 'active' : nil}= t 'nav.apel'
-            / %li
-            /  %a{:href => "/kontakt"} Kontakt
+            %li
+              %a{:href => t('nav.links.contact'), :class => @active == :contact ? 'active' : nil}= t 'nav.contact'
 
             %li#language.lang
               - start_pages = {pl: '/', en: '/about-me'}
