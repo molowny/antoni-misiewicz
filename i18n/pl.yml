@@ -74,5 +74,8 @@ pl:
     form_mail: "Adres e-mail"
     form_msg: "Wiadomość"
     form_send: "Wyślij"
+    msg:
+      error: Wiadomość nie została wysłana.
+      ok: Wiadomość wysłana. Dziękujemy.
 
 

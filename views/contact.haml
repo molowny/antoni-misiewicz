@@ -13,12 +13,15 @@
           %p= t 'contact.cloud_paragraph'      
     .col2 
       %form{:action => ""} 
-        %ul 
+        %ul.contact-form 
           %li
-            %input{:type => "text", :name => "", :placeholder => t('contact.form_name')} 
+            %input{:type => "text", :name => "", :placeholder => t('contact.form_name'), :required => "required"} 
           %li
-            %input{:type => "text", :name => "", :placeholder => t('contact.form_mail')} 
+            %input{:type => "email", :name => "", :placeholder => t('contact.form_mail'), :required => "required"} 
             %li
               %textarea{:name => "", :cols => "30", :rows => "10", :placeholder => t('contact.form_msg')} 
             %li
-              %input{:type => "submit", :value => t('contact.form_send')} 
+              .validate.left
+                %span.msg.error= t 'contact.msg.error'
+                / %span.msg.error= t 'contact.msg.ok'
+              %input{:type => "submit", :value => t('contact.form_send'), :class => "right"} 

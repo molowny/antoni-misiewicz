@@ -74,3 +74,6 @@ en:
     form_mail: "E-mail"
     form_msg: "Message"
     form_send: "Send"
+    msg:
+      error: Message has not been sent.
+      ok: Message has been send. Thanks.
