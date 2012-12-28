@@ -11,7 +11,7 @@
 
     %link{:href => "/css/normalize.css", :rel => "stylesheet"}
     %link{:href => "/css/main.css", :rel => "stylesheet"}
-    %link{:rel => "shortcut icon", :type => "image/x-icon", :href => "img/favicon.ico"} 
+    %link{:rel => "shortcut icon", :type => "image/x-icon", :href => "img/favicon.ico"}
 
     %script{:src => "/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"}
 
@@ -33,7 +33,7 @@
             %li
               %a{:href => t('nav.links.apel'), :class => @active == :apel ? 'active' : nil}= t 'nav.apel'
             %li
-              / %a{:href => t('nav.links.contact'), :class => @active == :contact ? 'active' : nil}= t 'nav.contact'
+              %a{:href => t('nav.links.contact'), :class => @active == :contact ? 'active' : nil}= t 'nav.contact'
 
             %li#language.lang
               - start_pages = {pl: '/', en: '/about-me'}
@@ -53,6 +53,7 @@
           © 2012
 
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
+    %script{:src => "/js/vendor/spin.min.js"}
     %script{:src => "/js/main.js"}
 
     :javascript

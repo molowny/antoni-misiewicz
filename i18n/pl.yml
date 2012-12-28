@@ -66,10 +66,10 @@ pl:
     pl: polski
     en: angielski
 
-  contact: 
+  contact:
     contact_header: "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis."
     cloud_header: "Skontaktuj się ze mną"
-    cloud_paragraph: "Cześć! Jestem Antoni Misiewicz. Przyszedłem na świat 4 lipca 2011 roku w Suwałkach. Wcześniejsze miesiące spędziłem w brzuszku mamy wraz z moją siostrą bliźniaczką Oleną. Po urodzeniu musieliśmy się rozstać – ja zostałem dłużej w szpitalu, ponieważ miałem problemy z oddychaniem. Ponadto lekarze postawili dodatkową diagnozę - zespół Downa."
+    cloud_paragraph: "Jeśli chcesz o coś zapytać mnie lub moich rodziców skorzystaj z tego formularza. Postarmy się odpisać tak szybko jak będzie to możliwe."
     form_name: "Imię i nazwisko"
     form_mail: "Adres e-mail"
     form_msg: "Wiadomość"

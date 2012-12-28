@@ -28,4 +28,36 @@ $(function() {
         e.stopPropagation();
     });
 
+    if ($('#contact').size() > 0) {
+
+        $('#contact').submit(function (e) {
+            $('.msg').addClass('hidden')
+            $('.spinner').removeClass('hidden');
+
+            $.ajax('/kontakt', {
+                type: 'post',
+
+                data: {
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    message: $('#message').val()
+                },
+
+                error: function () {
+                    $('.spinner').addClass('hidden');
+                    $('.error').removeClass('hidden');
+                },
+
+                success: function () {
+                    $('.spinner').addClass('hidden');
+                    $('.ok').removeClass('hidden');
+                }
+            });
+
+            e.preventDefault();
+        });
+
+        $('.spinner').spin('small');
+    }
+
 });

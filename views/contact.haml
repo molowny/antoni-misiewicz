@@ -2,26 +2,27 @@
   %a{:href => "/pdf/apel.pdf"}= t 'about.button'
 
 .wraper.clr
-  %p.lead= t 'contact.contact_header' 
-  .clr.contact 
-    .col2 
+  / %p.lead= t 'contact.contact_header'
+  .clr.contact
+    .col2
       .contact-box.clr
-        .contact-pic.left 
-          %img{:src => "img/contact-pic.png", :alt => ""} 
+        .contact-pic.left
+          %img{:src => "img/contact-pic.png", :alt => ""}
         .contact-txt.left
           %h3= t 'contact.cloud_header'
-          %p= t 'contact.cloud_paragraph'      
-    .col2 
-      %form{:action => ""} 
-        %ul.contact-form 
+          %p= t 'contact.cloud_paragraph'
+    .col2
+      %form#contact{:action => "/kontakt", :method => 'post'}
+        %ul.contact-form
           %li
-            %input{:type => "text", :name => "", :placeholder => t('contact.form_name'), :required => "required"} 
+            %input#name{:type => "text", :name => "name", :placeholder => t('contact.form_name'), :required => "required"}
           %li
-            %input{:type => "email", :name => "", :placeholder => t('contact.form_mail'), :required => "required"} 
+            %input#email{:type => "email", :name => "email", :placeholder => t('contact.form_mail'), :required => "required"}
             %li
-              %textarea{:name => "", :cols => "30", :rows => "10", :placeholder => t('contact.form_msg')} 
+              %textarea#message{:name => "message", :cols => "30", :rows => "10", :placeholder => t('contact.form_msg'), :required => "required"}
             %li
               .validate.left
-                %span.msg.error= t 'contact.msg.error'
-                / %span.msg.error= t 'contact.msg.ok'
-              %input{:type => "submit", :value => t('contact.form_send'), :class => "right"} 
+                %span.msg.error.hidden= t 'contact.msg.error'
+                %span.msg.ok.hidden= t 'contact.msg.ok'
+                %span.msg.spinner.hidden
+              %input{:type => "submit", :value => t('contact.form_send'), :class => "right"}

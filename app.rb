@@ -9,6 +9,9 @@ require 'sinatra/contrib'
 # i18n
 require 'i18n'
 
+# mails
+require 'pony'
+
 # mongodb
 # require 'mongo_mapper'
 
@@ -97,4 +100,26 @@ get '/contact' do
 
   @active = :contact
   haml @active
+end
+
+post '/kontakt' do
+  @name = Rack::Utils.escape_html(params[:name])
+  @email = Rack::Utils.escape_html(params[:email])
+  @message = Rack::Utils.escape_html(params[:message])
+
+  Pony.mail({
+    to: 'kontakt@antonimisiewicz.pl',
+    from: @email,
+    subject: 'Wiadomość z formularza kontaktowego',
+    html_body: haml(:mail, layout: false),
+    via: :smtp,
+    via_options: {
+      address:              'smtp.gmail.com',
+      port:                 '587',
+      enable_starttls_auto: true,
+      user_name:            'kontakt@antonimisiewicz.pl',
+      password:             'antoni27misiewicz',
+      authentication:       :plain
+    }
+  })
 end

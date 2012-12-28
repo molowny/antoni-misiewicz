@@ -14,3 +14,6 @@ gem 'haml'
 
 # i18n
 gem 'i18n'
+
+# mails
+gem 'pony'
