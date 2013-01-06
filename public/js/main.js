@@ -60,4 +60,25 @@ $(function() {
         $('.spinner').spin('small');
     }
 
+    function slider(){
+        var options = {
+            nextButton: false,
+            prevButton: false,
+            animateStartingFrameIn: true,
+            autoPlayDelay: 3000,
+            preloader: true,
+            pauseOnHover: false,
+            preloadTheseFrames: [1],
+            preloadTheseImages: [
+                "/img/slide1.png",
+                "/img/slide2.png"
+            ]
+        };
+        
+        var sequence = $("#sequence").sequence(options).data("sequence");
+
+    }
+
+    slider();
+
 });

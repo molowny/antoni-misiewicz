@@ -69,7 +69,7 @@ pl:
   contact:
     contact_header: "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis."
     cloud_header: "Skontaktuj się ze mną"
-    cloud_paragraph: "Jeśli chcesz o coś zapytać mnie lub moich rodziców skorzystaj z tego formularza. Postarmy się odpisać tak szybko jak będzie to możliwe."
+    cloud_paragraph: "Jeśli chcesz o coś zapytać mnie lub moich rodziców skorzystaj z tego formularza. Postaramy się odpisać tak szybko jak będzie to możliwe."
     form_name: "Imię i nazwisko"
     form_mail: "Adres e-mail"
     form_msg: "Wiadomość"

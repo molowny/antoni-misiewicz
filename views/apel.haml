@@ -2,11 +2,13 @@
   .clr.wraper
     %p.lead= t 'apel.lead_1'
 / .box blue
+.action-button
+  %a{:href => "/pdf/apel.pdf"}= t 'about.button'
 .wraper.clr
   %p.lead= t 'apel.lead_2'
 
   .sample.clr
-    .col2
+    .clr.data
       %ul.krs
         %li
           %span.label= t 'apel.krs_info'
@@ -15,7 +17,7 @@
           %span.label= t 'apel.krs_info_2'
           %span.val 17994 Misiewicz Antoni
     / .col2
-    .col2
+    .clr.data
       %figure
         %a{:href => "pdf/apel.pdf", :title => "Apel - plik pdf"}
           %img.wniosek{:alt => "podgląd wniosku", :src => "/img/wniosek.jpg"}
