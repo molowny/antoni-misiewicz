@@ -71,7 +71,10 @@ $(function() {
             preloadTheseFrames: [1],
             preloadTheseImages: [
                 "/img/slide1.png",
-                "/img/slide2.png"
+                "/img/slide2.png",
+                "/img/slide3.png",
+                "/img/slide4.png",
+                "/img/slide5.png"
             ]
         };
         
