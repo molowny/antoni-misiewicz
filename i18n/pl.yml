@@ -6,11 +6,13 @@ pl:
     about: O mnie
     apel: Apel
     contact: Kontakt
+    blog: Blog
 
     links:
       about: /o-mnie
       apel: /apel
       contact: /kontakt
+      blog: /blog
 
   # buttons
   about:

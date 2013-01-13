@@ -15,8 +15,18 @@
     %link{:rel => "shortcut icon", :type => "image/x-icon", :href => "img/favicon.ico"}
 
     %script{:src => "/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"}
+    %script{:src => "/js/vendor/ckeditor/ckeditor.js"}
 
   %body.subpage
+    #fb-root
+    :javascript
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
 
     .header-container
       %header.wraper.clr
@@ -35,6 +45,8 @@
               %a{:href => t('nav.links.apel'), :class => @active == :apel ? 'active' : nil}= t 'nav.apel'
             %li
               %a{:href => t('nav.links.contact'), :class => @active == :contact ? 'active' : nil}= t 'nav.contact'
+            %li
+              %a{:href => t('nav.links.blog'), :class => @active == :blog ? 'active' : nil}= t 'nav.blog'
 
             %li#language.lang
               - start_pages = {pl: '/', en: '/about-me'}
@@ -52,6 +64,10 @@
         %a{:href => "/"}
           %strong antonimisiewicz.pl
           © 2012
+        .social.right
+          .fb-like{"data-href" => "http://antonimisiewicz.pl/", "data-layout" => "button_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "450"}
+          %span.gplus
+            .g-plusone{"data-annotation" => "none", "data-href" => "http://antonimisiewicz.pl/", "data-size" => "medium"}
 
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
     %script{:src => "/js/vendor/spin.min.js"}
@@ -63,3 +79,10 @@
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
+
+    :javascript
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();

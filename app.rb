@@ -80,6 +80,13 @@ get '/kontakt' do
   haml @active
 end
 
+get '/blog' do
+  I18n.locale = :pl
+
+  @active = :blog
+  haml @active
+end
+
 # en
 get '/about-me' do
   I18n.locale = :en
@@ -99,6 +106,13 @@ get '/contact' do
   I18n.locale = :en
 
   @active = :contact
+  haml @active
+end
+
+get '/blog' do
+  I18n.locale = :en
+
+  @active = :blog
   haml @active
 end
 

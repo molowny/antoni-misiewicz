@@ -2,7 +2,7 @@ $(function() {
 
 	$(window).resize(function() {
 
-		var a = $('.timeline').width();
+		var a = $('.timeline-wraper').width();
 		$('.pointer').css('left', a/2);
 		$('.item:nth-child(2n) .pointer').css({
 			'left' : 'auto',
