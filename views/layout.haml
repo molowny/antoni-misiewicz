@@ -68,11 +68,12 @@
     .content.clr= yield
 
     .footer-container
-      %footer.wraper
-        %a{:href => "/"}
-          %strong antonimisiewicz.pl
-          © 2012
-        .social.right
+      %footer.wraper.clr
+        .credits.right 
+          %a{:href => "/"}
+            %strong antonimisiewicz.pl
+            © 2012
+        .social.left
           .fb-like{"data-href" => "http://antonimisiewicz.pl/", "data-layout" => "button_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "450"}
           %span.gplus
             .g-plusone{"data-annotation" => "none", "data-href" => "http://antonimisiewicz.pl/", "data-size" => "medium"}
