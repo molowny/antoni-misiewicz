@@ -45,8 +45,8 @@
               %a{:href => t('nav.links.apel'), :class => @active == :apel ? 'active' : nil}= t 'nav.apel'
             %li
               %a{:href => t('nav.links.contact'), :class => @active == :contact ? 'active' : nil}= t 'nav.contact'
-            %li
-              %a{:href => t('nav.links.blog'), :class => @active == :blog ? 'active' : nil}= t 'nav.blog'
+            / %li
+            /   %a{:href => t('nav.links.blog'), :class => @active == :blog ? 'active' : nil}= t 'nav.blog'
 
             %li#language.lang
               - start_pages = {pl: '/', en: '/about-me'}
