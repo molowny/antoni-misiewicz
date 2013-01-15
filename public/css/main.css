@@ -73,7 +73,7 @@ h2, h3 { color: #242850; }
    Author: Radoslaw Kowalewski / kowalewski.r@gmail.com
    ========================================================================== */
 
-body { font: 17px/1.5 SignikaLight, Helvetica, Helvetica Neue, Arial; background: #6d688e url(/img/bg.jpg) center 0 no-repeat fixed; color: #666; }
+body { font: 17px/1.5 SignikaLight, Helvetica, Helvetica Neue, Arial; background: #fff; color: #666; }
 
 .wraper { width: 70%; margin: 0 auto; }
 
@@ -221,6 +221,7 @@ body { font: 17px/1.5 SignikaLight, Helvetica, Helvetica Neue, Arial; background
 .footer-container { width: 100%; padding: 10px 0; background: #fff; border-top: 1px solid #ccc; }
 strong { font-weight: normal; font-family: SignikaRegular; }
 
+.social { }
 .fb-like { margin-right: 10px; display: block; float: left; }
 .gplus { display: block; float: left; padding-top: 2px; position: relative; }
 
