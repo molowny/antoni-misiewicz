@@ -132,7 +132,7 @@ post '/kontakt' do
       port:                 '587',
       enable_starttls_auto: true,
       user_name:            'kontakt@antonimisiewicz.pl',
-      password:             'antoni27misiewicz',
+      password:             ENV['EMAIL_PASSWORD'],
       authentication:       :plain
     }
   })
