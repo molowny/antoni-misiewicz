@@ -9,8 +9,8 @@ gem 'sinatra-contrib'
 
 gem 'haml'
 
-# gem 'mongo_mapper'
-# gem 'bson_ext'
+gem 'mongo_mapper'
+gem 'bson_ext'
 
 # i18n
 gem 'i18n'
