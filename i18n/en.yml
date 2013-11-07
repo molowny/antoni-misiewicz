@@ -7,11 +7,13 @@ en:
     apel: Appeal
     contact: Contact
     policy: Privacy policy
+    blog: Blog
 
     links:
       about: /en/about-me
       apel: /en/appeal
       contact: /en/contact
+      blog: /en/blog
 
   # buttons
   about:

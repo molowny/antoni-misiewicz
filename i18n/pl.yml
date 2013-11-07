@@ -7,11 +7,13 @@ pl:
     apel: Apel
     contact: Kontakt
     policy: Polityka prywatności
+    blog: Blog
 
     links:
       about: /o-mnie
       apel: /apel
       contact: /kontakt
+      blog: /blog
 
   # buttons
   about:
@@ -69,7 +71,7 @@ pl:
 
   contact:
     cloud_header: "Skontaktuj się ze mną"
-    cloud_paragraph: "Jeśli chcesz o coś zapytać mnie lub moich rodziców skorzystaj z tego formularza. Postarmy się odpisać tak szybko jak będzie to możliwe."
+    cloud_paragraph: "Jeśli chcesz o coś zapytać mnie lub moich rodziców skorzystaj z tego formularza. Postaramy się odpisać tak szybko jak będzie to możliwe."
     form_name: "Imię i nazwisko"
     form_mail: "Adres e-mail"
     form_msg: "Wiadomość"

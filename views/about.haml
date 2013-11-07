@@ -4,9 +4,28 @@
 .clr.wraper
   %p.lead= t 'about.lead'
 
+  #sequence-theme
+    #sequence 
+      %ul.clr
+        %li.animate-in 
+          %h2.title Razem z mamą i tatą 
+          %img.model{:src => "/img/slide1.png", :alt => "Razem z mamą i tatą"} 
+        %li 
+          %h2.title Krótka drzemka
+          %img.model{:src => "/img/slide2.png", :alt => "Krótka drzemka"} 
+        %li 
+          %h2.title Z mamą Krystyną
+          %img.model{:src => "/img/slide5.png", :alt => "Z mamą Krystyną"}
+        %li 
+          %h2.title Na spacerze z tatą
+          %img.model{:src => "/img/slide3.png", :alt => "Na spacerze z tatą"} 
+        %li 
+          %h2.title Ja i młodsza o 2 min siostra Olena 
+          %img.model{:src => "/img/slide4.png", :alt => "Ja i młodsza o 2 min siostra Olena"} 
+
   .about.clr
-    .about-pic
-      %img{:alt => "ja z mamą Krystyną", :src => "/img/about-pic.png"}
+    / .about-pic
+    /   %img{:alt => "ja z mamą Krystyną", :src => "/img/about-pic.png"}
     %ul.clr
       %li
         %span.label= "#{t('about.labels.first_name')}:"
@@ -22,13 +41,13 @@
           = t 'about.labels.height'
           %small> *
           \:
-        %span.value 83cm
+        %span.value 75cm
       %li
         %span.label
           = t 'about.labels.weight'
           %small> *
           \:
-        %span.value 12kg
+        %span.value 10,5kg
       %li
         %span.label= "#{t('about.labels.siblings')}:"
         %span.value
@@ -36,7 +55,7 @@
     %span.notice
       %small *
       = t 'about.state'
-      %strong XII 2012
+      %strong styczeń 2013
   / .about
 / .article
 .box.orange

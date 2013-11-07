@@ -2,7 +2,7 @@ $(function() {
 
 	$(window).resize(function() {
 
-		var a = $('.timeline').width();
+		var a = $('.timeline-wraper').width();
 		$('.pointer').css('left', a/2);
 		$('.item:nth-child(2n) .pointer').css({
 			'left' : 'auto',
@@ -59,5 +59,29 @@ $(function() {
 
         $('.spinner').spin('small');
     }
+
+    function slider(){
+        var options = {
+            nextButton: false,
+            prevButton: false,
+            animateStartingFrameIn: true,
+            autoPlayDelay: 3000,
+            preloader: true,
+            pauseOnHover: false,
+            preloadTheseFrames: [1],
+            preloadTheseImages: [
+                "/img/slide1.png",
+                "/img/slide2.png",
+                "/img/slide3.png",
+                "/img/slide4.png",
+                "/img/slide5.png"
+            ]
+        };
+        
+        var sequence = $("#sequence").sequence(options).data("sequence");
+
+    }
+
+    slider();
 
 });
