@@ -1,0 +1,15 @@
+- if request.post? && @post.invalid?
+  .alert Wypełnij wszystkie pola :)
+
+%form{ action: "/blog/posts", method: "post" }
+  %input{ type: "text", name: "title", value: @post.title }
+  %textarea{ name: "content", cols: "30", rows: "10" }= @post.content
+  %input{ type: "submit", value: "Dodaj" }
+
+- @posts.each do |post|
+  %h3= post.title
+  %p
+    = post.created_at
+    = post.content
+    - if authorized?
+      %a{:href => "/blog/posts/#{post.id}/destroy"} usuń

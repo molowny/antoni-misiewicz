@@ -6,6 +6,7 @@ pl:
     about: O mnie
     apel: Apel
     contact: Kontakt
+    policy: Polityka prywatności
 
     links:
       about: /o-mnie
@@ -67,7 +68,6 @@ pl:
     en: angielski
 
   contact:
-    contact_header: "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis."
     cloud_header: "Skontaktuj się ze mną"
     cloud_paragraph: "Jeśli chcesz o coś zapytać mnie lub moich rodziców skorzystaj z tego formularza. Postarmy się odpisać tak szybko jak będzie to możliwe."
     form_name: "Imię i nazwisko"
@@ -78,4 +78,12 @@ pl:
       error: Wiadomość nie została wysłana.
       ok: Wiadomość wysłana. Dziękujemy.
 
+  policy:
+    header_1: Polityka prywatności
+    header_2: Ciasteczka (cookies)
+    header_3: Google Analytics
 
+    paragraph_1: www.antonimisiewicz.pl zastrzega sobie prawo do wprowadzania zmian w niniejszej Polityce Prywatności. Polityka Prywatności obowiązuje wszystkie osoby odwiedzające naszą stronę.
+    paragraph_2: Strona www.antonimisiewicz.pl może wykorzystywać ciasteczka, czyli małe pliki tekstowe wysyłane do komputera odwiedzającego identyfikujące go w sposób potrzebny do uproszczenia i przyspieszenia działania serwisu. Ciasteczka są nieszkodliwe dla komputera, jak również dla użytkownika i jego danych. Każdy użytkownik może je wyłączyć w ustawieniach własnej przeglądarki.
+    paragraph_3: Wyłączenie lub blokada obsługi cookies może spowodować nieprawidłowe działanie naszej witryny. Jeśli Twoja przeglądarka akceptuje obsługę Cookies, oznacza to wyrażenie zgody na stosowanie cookies przez naszą witrynę.
+    paragraph_4: Strona www.antonimisiewicz.pl korzysta z Google Analytics, usługi analizy oglądalności stron internetowych udostępnianej przez Google, Inc. („Google”). Google Analytics używa „cookies”, czyli plików tekstowych umieszczanych na komputerze użytkownika w celu umożliwienia witrynie przeanalizowania sposobu, w jaki użytkownicy z niej korzystają. Informacje generowane przez cookie na temat korzystania z witryny przez użytkownika (włącznie z jego adresem IP) będą przekazywane spółce Google i przechowywane przez nią na serwerach w Stanach Zjednoczonych.

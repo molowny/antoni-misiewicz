@@ -36,7 +36,7 @@
               %a{:href => t('nav.links.contact'), :class => @active == :contact ? 'active' : nil}= t 'nav.contact'
 
             %li#language.lang
-              - start_pages = {pl: '/', en: '/about-me'}
+              - start_pages = {pl: '/', en: '/en/about-me'}
               %a{:href => start_pages[I18n.locale], :title => "polski", :class => I18n.locale}= t "i18n.#{I18n.locale}"
               .drop
                 %ul
@@ -51,6 +51,7 @@
         %a{:href => "/"}
           %strong antonimisiewicz.pl
           © 2012
+        %a.right{:href => "/polityka-prywatnosci"}= t'nav.policy'
 
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
     %script{:src => "/js/vendor/spin.min.js"}

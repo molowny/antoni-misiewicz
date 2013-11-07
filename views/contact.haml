@@ -12,7 +12,7 @@
           %h3= t 'contact.cloud_header'
           %p= t 'contact.cloud_paragraph'
     .col2
-      %form#contact{:action => "/kontakt", :method => 'post'}
+      %form#contact{:action => "/send_message", :method => 'post'}
         %ul.contact-form
           %li
             %input#name{:type => "text", :name => "name", :placeholder => t('contact.form_name'), :required => "required"}

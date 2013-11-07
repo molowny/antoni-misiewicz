@@ -6,11 +6,12 @@ en:
     about: About me
     apel: Appeal
     contact: Contact
+    policy: Privacy policy
 
     links:
-      about: /about-me
-      apel: /appeal
-      contact: /contact
+      about: /en/about-me
+      apel: /en/appeal
+      contact: /en/contact
 
   # buttons
   about:

@@ -13,17 +13,26 @@ require 'i18n'
 require 'pony'
 
 # mongodb
-# require 'mongo_mapper'
+require 'mongo_mapper'
+
+# models
+class Post
+  include MongoMapper::Document
+
+  key :title,   String, required: true
+  key :content, String, required: true
+  timestamps!
+end
 
 configure do
   I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'i18n', '*.yml').to_s]
 
-  # MongoMapper.setup(
-  #   {
-  #     'production' => { 'uri' => ENV['MONGOHQ_URL'] },
-  #     'development' => { 'host' => 'localhost', 'database' => 'antos' }
-  #   },
-  #   ENV['RACK_ENV'] || 'development')
+  MongoMapper.setup(
+    {
+      'production' => { 'uri' => ENV['MONGOHQ_URL'] },
+      'development' => { 'host' => 'localhost', 'database' => 'antos' }
+    },
+    ENV['RACK_ENV'] || 'development')
 end
 
 configure :development do |config|
@@ -32,7 +41,6 @@ configure :development do |config|
 end
 
 helpers do
-
   def protected!
     unless authorized?
       response['WWW-Authenticate'] = %(Basic realm="Podaj haslo dostepowe")
@@ -42,67 +50,33 @@ helpers do
 
   def authorized?
     @auth ||=  Rack::Auth::Basic::Request.new(request.env)
-    @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == ['admin', 'admin']
+    @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == ['admin', ENV['HTTP_PASSWORD']]
   end
 
   def t(phrase)
     I18n.t(phrase)
   end
-
 end
 
-# pl
-get '/' do
-  I18n.locale = :pl
+namespace '/' do
+  before { I18n.locale = :pl }
 
-  @active = :about
-  haml @active
+  get { haml @active = :about }
+  get('o-mnie') { haml @active = :about }
+  get('apel') { haml @active = :apel }
+  get('kontakt') { haml @active = :contact }
+  get('polityka-prywatnosci') { haml @active = :policy }
 end
 
-get '/o-mnie' do
-  I18n.locale = :pl
+namespace '/en/' do
+  before { I18n.locale = :en }
 
-  @active = :about
-  haml @active
+  get('about-me') { haml @active = :about }
+  get('appeal') { haml @active = :apel }
+  get('contact') { haml @active = :contact }
 end
 
-get '/apel' do
-  I18n.locale = :pl
-
-  @active = :apel
-  haml @active
-end
-
-get '/kontakt' do
-  I18n.locale = :pl
-
-  @active = :contact
-  haml @active
-end
-
-# en
-get '/about-me' do
-  I18n.locale = :en
-
-  @active = :about
-  haml @active
-end
-
-get '/appeal' do
-  I18n.locale = :en
-
-  @active = :apel
-  haml @active
-end
-
-get '/contact' do
-  I18n.locale = :en
-
-  @active = :contact
-  haml @active
-end
-
-post '/kontakt' do
+post '/send_message' do
   @name = Rack::Utils.escape_html(params[:name])
   @email = Rack::Utils.escape_html(params[:email])
   @message = Rack::Utils.escape_html(params[:message])
@@ -118,8 +92,43 @@ post '/kontakt' do
       port:                 '587',
       enable_starttls_auto: true,
       user_name:            'kontakt@antonimisiewicz.pl',
-      password:             'antoni27misiewicz',
+      password:             ENV['EMAIL_PASSWORD'],
       authentication:       :plain
     }
   })
+end
+
+# blog entries
+namespace '/blog/' do
+  get 'posts' do
+    I18n.locale = :pl
+
+    @posts = Post.all(order: :created_at.desc)
+    @post = Post.new
+
+    haml @active = :posts
+  end
+
+  # blog
+  post 'posts' do
+    protected!
+
+    @posts = Post.all(order: :created_at.desc)
+    @post = Post.new(title: params[:title], content: params[:content])
+
+    if @post.save
+      redirect '/blog/posts'
+    else
+      haml :posts
+    end
+  end
+
+  get 'posts/:id/destroy' do
+    protected!
+
+    post = Post.find(params[:id])
+    post.destroy
+
+    redirect '/blog/posts'
+  end
 end
