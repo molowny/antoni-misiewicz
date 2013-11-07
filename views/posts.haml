@@ -1,15 +1,76 @@
-- if request.post? && @post.invalid?
-  .alert Wypełnij wszystkie pola :)
-
-%form{ action: "/blog/posts", method: "post" }
-  %input{ type: "text", name: "title", value: @post.title }
-  %textarea{ name: "content", cols: "30", rows: "10" }= @post.content
-  %input{ type: "submit", value: "Dodaj" }
-
-- @posts.each do |post|
-  %h3= post.title
-  %p
-    = post.created_at
-    = post.content
+.content.blog
+  .apel
+    .wraper
+      %img.antek{:alt => "", :src => "/img/antek.png"}
+        .apel-content
+          %h2 Szanowni Państwo
+          %p
+            Nasz synek Antoni ma zespół Downa. Jest pogodnym i wesołym dzieckiem. Na świat przyszedł razem ze swoją siostrą Oleną
+            4 lipca 2011 roku. Chcemy, aby mógł jak najlepiej funkcjonować w dalszym życiu. Wiąże się to z ogromnymi kosztami, dlatego też będziemy wdzięczni za każdy rodzaj wsparcia czy to duchowego czy materialnego.
+        / .apel-content
+    / .wraper
+  / .apel
+  .action-button
+    %a{:href => ""} Przekaż 1% podatku
+  .timeline.clr
+    /box - dodawanie nowego posta
     - if authorized?
-      %a{:href => "/blog/posts/#{post.id}/destroy"} usuń
+      .new-post.wraper
+        %h3 Dodaj nowy post
+
+        - if request.post? && @post.invalid?
+          .alert Wypełnij wszystkie pola :)
+
+        %form{ action: "/blog/posts", method: "post" }
+          %ul
+            %li
+              %label{:for => "title"} Tytuł posta
+              %input{:type => "text", :name => "title", :value => @post.title}
+            %li
+              %label{:for => "content"}  Treść posta
+              %textarea{:name => "content", :cols => "30", :rows => "10"}= @post.content
+              %script CKEDITOR.replace( 'content' );
+            %li
+              %input{:type => "submit", :value => "Dodaj post"}
+
+      /koniec dodawania posta
+    .timeline-border
+    .timeline-wraper.wraper.clr
+      - @months.each do |month, posts|
+        .month.clr
+          .month-name
+            %span= month
+          .clr
+            - posts.each do |post|
+              .item
+                .pointer
+                %header
+                  / %a.link{:href => "", :title => "kopiuj link do postu"}
+                  %a.link.remove{:href => "/blog/posts/#{post.id}/destroy"} usuń
+                  .date= post.created_at
+
+                %article
+                  %h2= post.title
+                  %p= post.content
+              / .item
+
+      / .load
+      /   %a{:href => ""}
+      /     %span wczytaj starsze posty
+
+      / widok pojedynczego posta
+
+      / .single-post.clr
+      /   .item
+      /     %header
+      /       .date wtorek, 23.08.2012
+      /     %article
+      /       %h2 Lorem ipsum dolor sit amet enim. Etiam suspendisse.
+      /       %p
+      /         Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor.
+      /       %p
+      /         Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor.
+      /   / .item
+
+    / .timeline
+  / .content

@@ -98,12 +98,19 @@ post '/send_message' do
   })
 end
 
+get '/admin' do
+  protected!
+  redirect '/'
+end
+
 # blog entries
 namespace '/blog/' do
   get 'posts' do
     I18n.locale = :pl
 
     @posts = Post.all(order: :created_at.desc)
+    @months = @posts.group_by { |t| t.created_at.strftime('%B %Y') }
+
     @post = Post.new
 
     haml @active = :posts

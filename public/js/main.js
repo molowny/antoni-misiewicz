@@ -77,11 +77,15 @@ $(function() {
                 "/img/slide5.png"
             ]
         };
-        
+
         var sequence = $("#sequence").sequence(options).data("sequence");
 
     }
 
     slider();
+
+    // $('.month').each(function () {
+    //     $(this).find('.clr .item:last-child').wrap('<div class="single-post clr">');
+    // });
 
 });
