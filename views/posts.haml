@@ -46,7 +46,7 @@
                 .pointer
                 %header
                   / %a.link{:href => "", :title => "kopiuj link do postu"}
-                  %a.link.remove{:href => "/blog/posts/#{post.id}/destroy"} usuń
+                  %a.link.remove{:href => "/blog/posts/#{post.id}/destroy", :title => "Usuń post"} usuń
                   .date= post.created_at
 
                 %article
