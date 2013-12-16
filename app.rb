@@ -65,7 +65,7 @@ end
 namespace '/' do
   before { I18n.locale = :pl }
 
-  get { haml @active = :about }
+  get { call env.merge('PATH_INFO' => '/blog/posts') }
   get('o-mnie') { haml @active = :about }
   get('apel') { haml @active = :apel }
   get('kontakt') { haml @active = :contact }
@@ -112,6 +112,7 @@ namespace '/blog/' do
   before do
     @posts = Post.all(order: :created_at.desc)
     @months = @posts.group_by { |t| I18n.l(t.created_at, format: '%B %Y') }
+    @active = :blog
   end
 
   get 'posts' do
@@ -119,7 +120,7 @@ namespace '/blog/' do
 
     @post = Post.new
 
-    haml @active = :posts
+    haml :posts
   end
 
   # blog
