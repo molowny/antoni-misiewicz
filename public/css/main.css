@@ -179,7 +179,7 @@ body { font: 17px/1.5 SignikaLight, Helvetica, Helvetica Neue, Arial; background
 
 .content .item { position: relative; width: 47%; float: left; background: #fff; margin-bottom: 20px; border: 1px solid #cacaca; padding: 40px; border-radius: 8px;
     -webkit-box-shadow: 1px 1px 2px rgba(30,30,30,0.2);
-    box-shadow:  1px 1px 2px rgba(30,30,30,0.2);    
+    box-shadow:  1px 1px 2px rgba(30,30,30,0.2);
 }
 .content .item:nth-child(2n) { float: right; }
 .content .item:nth-child(2n) + * { clear: left; }
@@ -201,6 +201,7 @@ body { font: 17px/1.5 SignikaLight, Helvetica, Helvetica Neue, Arial; background
 .content .item .date { font-size: 13px; margin-bottom: 10px; color: #9e9e9e; }
 .content .item .link { display: none; position: absolute; top: 0; right: 0; width: 17px; height: 16px; background: url(/img/link-ico.png) 0 0 no-repeat; text-indent: -9999px; }
 .content .item .link.remove { background: url(/img/remove.png) 0 0 no-repeat; }
+.content .item .link.edit { right: 25px; }
 .content .item .link:hover { background-position: 0 bottom; }
 .content .item:hover .link { display: block; }
 

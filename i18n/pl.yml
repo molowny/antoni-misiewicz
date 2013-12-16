@@ -89,3 +89,60 @@ pl:
     paragraph_2: Strona www.antonimisiewicz.pl może wykorzystywać ciasteczka, czyli małe pliki tekstowe wysyłane do komputera odwiedzającego identyfikujące go w sposób potrzebny do uproszczenia i przyspieszenia działania serwisu. Ciasteczka są nieszkodliwe dla komputera, jak również dla użytkownika i jego danych. Każdy użytkownik może je wyłączyć w ustawieniach własnej przeglądarki.
     paragraph_3: Wyłączenie lub blokada obsługi cookies może spowodować nieprawidłowe działanie naszej witryny. Jeśli Twoja przeglądarka akceptuje obsługę Cookies, oznacza to wyrażenie zgody na stosowanie cookies przez naszą witrynę.
     paragraph_4: Strona www.antonimisiewicz.pl korzysta z Google Analytics, usługi analizy oglądalności stron internetowych udostępnianej przez Google, Inc. („Google”). Google Analytics używa „cookies”, czyli plików tekstowych umieszczanych na komputerze użytkownika w celu umożliwienia witrynie przeanalizowania sposobu, w jaki użytkownicy z niej korzystają. Informacje generowane przez cookie na temat korzystania z witryny przez użytkownika (włącznie z jego adresem IP) będą przekazywane spółce Google i przechowywane przez nią na serwerach w Stanach Zjednoczonych.
+
+  time:
+    formats:
+      default: ! '%d-%m-%Y'
+      long: ! '%A, %d %B %Y'
+      short: ! '%d %b'
+      day_of_week: ! '%A'
+
+  date:
+    abbr_day_names:
+    - nie
+    - pon
+    - wto
+    - śro
+    - czw
+    - pią
+    - sob
+    abbr_month_names:
+    -
+    - sty
+    - lut
+    - mar
+    - kwi
+    - maj
+    - cze
+    - lip
+    - sie
+    - wrz
+    - paź
+    - lis
+    - gru
+    day_names:
+    - niedziela
+    - poniedziałek
+    - wtorek
+    - środa
+    - czwartek
+    - piątek
+    - sobota
+    month_names:
+    -
+    - styczeń
+    - luty
+    - marzec
+    - kwiecień
+    - maj
+    - czerwiec
+    - lipiec
+    - sierpień
+    - wrzesień
+    - październik
+    - listopad
+    - grudzień
+    order:
+    - :day
+    - :month
+    - :year

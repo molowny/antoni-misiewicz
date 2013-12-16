@@ -56,6 +56,10 @@ helpers do
   def t(phrase)
     I18n.t(phrase)
   end
+
+  def l(date, options = {})
+    I18n.l(date, options)
+  end
 end
 
 namespace '/' do
@@ -105,11 +109,13 @@ end
 
 # blog entries
 namespace '/blog/' do
+  before do
+    @posts = Post.all(order: :created_at.desc)
+    @months = @posts.group_by { |t| I18n.l(t.created_at, format: '%B %Y') }
+  end
+
   get 'posts' do
     I18n.locale = :pl
-
-    @posts = Post.all(order: :created_at.desc)
-    @months = @posts.group_by { |t| t.created_at.strftime('%B %Y') }
 
     @post = Post.new
 
@@ -120,10 +126,29 @@ namespace '/blog/' do
   post 'posts' do
     protected!
 
-    @posts = Post.all(order: :created_at.desc)
     @post = Post.new(title: params[:title], content: params[:content])
 
     if @post.save
+      redirect '/blog/posts'
+    else
+      haml :posts
+    end
+  end
+
+  get 'posts/:id/edit' do
+    protected!
+
+    @post = Post.find(params[:id])
+
+    haml :posts
+  end
+
+  post 'posts/:id' do
+    protected!
+
+    @post = Post.find(params[:id])
+
+    if @post.update_attributes(title: params[:title], content: params[:content])
       redirect '/blog/posts'
     else
       haml :posts
