@@ -193,7 +193,8 @@ body { font: 17px/1.5 SignikaLight, Helvetica, Helvetica Neue, Arial; background
 .content .item>header { position: relative; }
 .content .item>article {  }
 .content .item>article figure { margin-bottom: 20px; }
-.content .item>article figure img { display: block; width: 100%; padding: 10px; background:#fff; border: 1px solid #cacaca; border-radius: 8px; margin-bottom: 5px; }
+.content .item>article figure img,
+.content .item img { display: block; max-width: 100%; padding: 10px; background:#fff; border: 1px solid #cacaca; border-radius: 8px; margin-bottom: 5px; height: auto !important; }
 .content .item>article figure figcaption { font-size: 13px; margin-bottom: 10px; color: #9e9e9e; }
 .content .item>article h2 { font-size: 22px; color: #4d4681; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid #cecece; line-height: 1.2; /*text-transform: uppercase;*/ font-family: SignikaRegular; }
 .content .item>article h3 { font-size: 17px; }
