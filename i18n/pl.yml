@@ -13,7 +13,7 @@ pl:
       about: /o-mnie
       apel: /apel
       contact: /kontakt
-      blog: /blog
+      blog: /
 
   # buttons
   about:
@@ -59,8 +59,8 @@ pl:
     lead_1: "Szanowni Państwo,<br>Nasz synek Antoni ma zespół Downa. Pragniemy zapewnić mu jak najlepsze warunki rozwoju. Niestety wiąże się to z ogromnymi kosztami, których nie jesteśmy w stanie pokryć samodzielnie. Dlatego też zwracamy się do Państwa z gorącą prośbą o przekazanie 1% podatku należnego na pomoc naszemu synkowi – Antosiowi."
     lead_2: "Przekaż swój 1% podatku Antkowi!<br>Wystarczy, że w zeznaniu podatkowym wpiszesz dane:"
 
-    krs_info: "KRS <small>(pole 124)</small>:"
-    krs_info_2: "Cel szczegółowy 1% <small>(pole 126):</small>"
+    krs_info: "KRS <small>(pole 131)</small>:"
+    krs_info_2: "Cel szczegółowy 1% <small>(pole 133):</small>"
 
     paragraph_1: "Wszelkie darowizny prosimy wpłacać na konto:"
     paragraph_2: "Będziemy wdzięczni za każdy rodzaj wsparcia – duchowego czy materialnego. Dziękujemy!"
@@ -89,3 +89,60 @@ pl:
     paragraph_2: Strona www.antonimisiewicz.pl może wykorzystywać ciasteczka, czyli małe pliki tekstowe wysyłane do komputera odwiedzającego identyfikujące go w sposób potrzebny do uproszczenia i przyspieszenia działania serwisu. Ciasteczka są nieszkodliwe dla komputera, jak również dla użytkownika i jego danych. Każdy użytkownik może je wyłączyć w ustawieniach własnej przeglądarki.
     paragraph_3: Wyłączenie lub blokada obsługi cookies może spowodować nieprawidłowe działanie naszej witryny. Jeśli Twoja przeglądarka akceptuje obsługę Cookies, oznacza to wyrażenie zgody na stosowanie cookies przez naszą witrynę.
     paragraph_4: Strona www.antonimisiewicz.pl korzysta z Google Analytics, usługi analizy oglądalności stron internetowych udostępnianej przez Google, Inc. („Google”). Google Analytics używa „cookies”, czyli plików tekstowych umieszczanych na komputerze użytkownika w celu umożliwienia witrynie przeanalizowania sposobu, w jaki użytkownicy z niej korzystają. Informacje generowane przez cookie na temat korzystania z witryny przez użytkownika (włącznie z jego adresem IP) będą przekazywane spółce Google i przechowywane przez nią na serwerach w Stanach Zjednoczonych.
+
+  time:
+    formats:
+      default: ! '%d-%m-%Y'
+      long: ! '%A, %d %B %Y'
+      short: ! '%d %b'
+      day_of_week: ! '%A'
+
+  date:
+    abbr_day_names:
+    - nie
+    - pon
+    - wto
+    - śro
+    - czw
+    - pią
+    - sob
+    abbr_month_names:
+    -
+    - sty
+    - lut
+    - mar
+    - kwi
+    - maj
+    - cze
+    - lip
+    - sie
+    - wrz
+    - paź
+    - lis
+    - gru
+    day_names:
+    - niedziela
+    - poniedziałek
+    - wtorek
+    - środa
+    - czwartek
+    - piątek
+    - sobota
+    month_names:
+    -
+    - styczeń
+    - luty
+    - marzec
+    - kwiecień
+    - maj
+    - czerwiec
+    - lipiec
+    - sierpień
+    - wrzesień
+    - październik
+    - listopad
+    - grudzień
+    order:
+    - :day
+    - :month
+    - :year

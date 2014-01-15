@@ -45,6 +45,10 @@
             pl
         %nav
           %ul
+            - if I18n.locale == :pl
+              %li
+                %a{:href => t('nav.links.blog'), :class => @active == :blog ? 'active' : nil}= t 'nav.blog'
+
             %li
               %a{:href => t('nav.links.about'), :class => @active == :about ? 'active' : nil}= t 'nav.about'
             / %li

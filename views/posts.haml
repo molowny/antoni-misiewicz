@@ -21,7 +21,7 @@
         - if request.post? && @post.invalid?
           .alert Wypełnij wszystkie pola :)
 
-        %form{ action: "/blog/posts", method: "post" }
+        %form{ action: @post.persisted? ? "/blog/posts/#{@post.id}" : "/blog/posts", method: "post" }
           %ul
             %li
               %label{:for => "title"} Tytuł posta
@@ -31,7 +31,7 @@
               %textarea{:name => "content", :cols => "30", :rows => "10"}= @post.content
               %script CKEDITOR.replace( 'content' );
             %li
-              %input{:type => "submit", :value => "Dodaj post"}
+              %input{:type => "submit", :value => @post.persisted? ? "Zmień post" : "Dodaj post"}
 
       /koniec dodawania posta
     .timeline-border
@@ -46,9 +46,10 @@
                 .pointer
                 %header
                   / %a.link{:href => "", :title => "kopiuj link do postu"}
-                  %a.link.remove{:href => "/blog/posts/#{post.id}/destroy", :title => "Usuń post"} usuń
-                  .date= post.created_at
-
+                  - if authorized?
+                    %a.link.edit{:href => "/blog/posts/#{post.id}/edit", :title => "Edytuj post"} edytuj
+                    %a.link.remove{:href => "/blog/posts/#{post.id}/destroy", :title => "Usuń post"} usuń
+                  .date= l post.created_at, format: :long
                 %article
                   %h2= post.title
                   %p= post.content
