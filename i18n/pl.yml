@@ -40,19 +40,19 @@ pl:
 
     doctors:
       # z google translate :)
-      cardiologist: Kardiolog
+      neurologist: Neurolog
       orthopaedist: Ortopeda
       ophthalmologist: Okulista
       endocrinologist: Endokrynolog
-      laryngologist: Laryngolog
+      audiologist: Audiolog
       pediatrician: Pediatra
 
     stories:
-      cardiologist: "W szpitalu zdiagnozowano niewielką wadę serca. Na szczęście kolejne badania potwierdziły, że ubytek zarasta i nie sprawia większych problemów."
-      orthopaedist: "Ze względu na moje ułożenie w brzuchu mamy istniało ryzyko, że mogę mieć problemy z bioderkami. Szczęśliwie wszystko jest w porządku. Jednakże mając na uwadze moją wiotkość mięśni, muszę być systematycznie kontrolowany."
-      ophthalmologist: "Okazało się, że jestem krótkowidzem. Potrzebuję stałej kontroli okulistycznej, a w przyszłości będę nosił okulary."
-      endocrinologist: "Jestem także pod stałą obserwacją endokrynologa, ponieważ mogę mieć problemy z hormonami tarczycy. Podobno wielu zespołowców tak ma."
-      laryngologist: "Mam lekki niedosłuch. Jest on spowodowany wiotkością mięśni i słabym odprowadzaniem płynów z uszu. Najprawdopodobniej będę miał przeprowadzony zabieg drenażu, dlatego muszę systematycznie odwiedzać panią laryngolog."
+      neurologist: "Systematycznie odwiedzam Panią neurolog. Dodatkowo jeżdżę do Wrocławia po kolejne serie cerebrolizyny."
+      orthopaedist: "Moje mięśnie nadal są trochę ze słabe (szczególnie na brzuchu) przez co trochę inaczej chodzę i muszę odwiedzać ortopedę."
+      ophthalmologist: "Pomimo wstępnych podejrzeń (krótkowzroczność) z moim wzrokiem jest wszystko ok."
+      endocrinologist: "Jestem także pod stałą obserwacją endokrynologa, ponieważ mogę mieć problemy z hormonami tarczycy. Jednak na razie wszystko jest w normie."
+      audiologist: "Mam lekki niedosłuch. Jest on spowodowany wiotkością mięśni i słabym odprowadzaniem płynów z uszu. Całe szczęście sytuacja jest na tyle dobra, że obyłem się bez zabiegu (przynajmniej na jakiś czas)."
       pediatrician: "Okazuje się, że dzieci z zD mają słabszą odporność, więc częściej odwiedzam panią doktor i regularnie przeprowadzam badania krwi."
 
   apel:

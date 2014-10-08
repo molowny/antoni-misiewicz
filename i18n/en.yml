@@ -40,19 +40,19 @@ en:
 
     doctors:
       # z google translate :)
-      cardiologist: Cardiologist
+      neurologist: Neurologist
       orthopaedist: Orthopaedist
       ophthalmologist: Ophthalmologist
       endocrinologist: Endocrinologist
-      laryngologist: Laryngologist
+      audiologist: Audiologist
       pediatrician: Pediatrician
 
     stories:
-      cardiologist: "In the hospital, I was diagnosed with a minor heart defect . Fortunately, subsequent studies confirmed that the loss had overgrown and not cause major problems."
+      neurologist: ""
       orthopaedist: "Because of my position in my mom's belly there was risk that I would have problems with hips. Fortunately, everything is fine. However, given my floppy muscles, I need to be regularly inspected."
       ophthalmologist: "It turned out that I have myopia. I need constant monitoring, and in the future I will be wearing glasses."
       endocrinologist: "I am also under constant observation of endocrinologist because I have problems with thyroid hormones. Apparently, it is common problem of children with Down syndrome."
-      laryngologist: "I have a slight hearing loss. It is caused by muscle flaccidity and weak fluid discharge from my ears. Most likely, I will need to undergo drainage surgery, so I have to regularly visit laryngologist."
+      audiologist: ""
       pediatrician: "It turns out that children with Down syndrome have a weaker immune system, so I have to visit my doctor more often and have regular blood tests."
 
   apel:
