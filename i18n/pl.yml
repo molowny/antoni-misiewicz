@@ -59,8 +59,8 @@ pl:
     lead_1: "Szanowni Państwo,<br>Nasz synek Antoni ma zespół Downa. Pragniemy zapewnić mu jak najlepsze warunki rozwoju. Niestety wiąże się to z ogromnymi kosztami, których nie jesteśmy w stanie pokryć samodzielnie. Dlatego też zwracamy się do Państwa z gorącą prośbą o przekazanie 1% podatku należnego na pomoc naszemu synkowi – Antosiowi."
     lead_2: "Przekaż swój 1% podatku Antkowi!<br>Wystarczy, że w zeznaniu podatkowym wpiszesz dane:"
 
-    krs_info: "KRS <small>(pole 124)</small>:"
-    krs_info_2: "Cel szczegółowy 1% <small>(pole 126):</small>"
+    krs_info: "KRS <small>(pole 131)</small>:"
+    krs_info_2: "Cel szczegółowy 1% <small>(pole 133):</small>"
 
     paragraph_1: "Wszelkie darowizny prosimy wpłacać na konto:"
     paragraph_2: "Będziemy wdzięczni za każdy rodzaj wsparcia – duchowego czy materialnego. Dziękujemy!"
